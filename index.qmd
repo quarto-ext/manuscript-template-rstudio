@@ -90,7 +90,7 @@ avg_years_between_eruptions <- mean(diff(eruptions[-n_eruptions]))
 avg_years_between_eruptions
 ```
 
-Based on the eruptions up to and including 1971, we would estimate $\lambda$ to be $\frac{1}{79.8}$.
+Based on the eruptions up to and including 1971, we would estimate $\lambda$ to be $\frac{1}{`r round(avg_years_between_eruptions, 1)`}$.
 
 Studies of the magma systems feeding the volcano, such as @marrero2019, have proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).
 
