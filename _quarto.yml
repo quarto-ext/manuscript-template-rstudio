@@ -1,6 +1,9 @@
 project:
   type: manuscript
 
+execute:
+  freeze: auto
+
 format:
   html:
     toc: true
