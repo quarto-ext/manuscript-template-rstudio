@@ -37,35 +37,6 @@ number-sections: true
 
 ## Introduction
 
-![Map of La Palma](images/la-palma-map.png){#fig-map}
-
-La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (@fig-map). 
-
-| Name                 | Year   |
-| -------------------- | ------ |
-| Current              | 2021   |
-| Teneguía             | 1971   |
-| Nambroque            | 1949   |
-| El Charco            | 1712   |
-| Volcán San Antonio   | 1677   |
-| Volcán San Martin    | 1646   |
-| Tajuya near El Paso  | 1585   |
-| Montaña Quemada      | 1492   |
-
-: Recent historic eruptions on La Palma {#tbl-history}
-
-@tbl-history summarises the eruptions recorded since the colonization of the islands by Europeans in the late 1400s.
-
-Data and methods are discussed in @sec-data-methods.
-
-Let $x$ denote the number of eruptions in a year. Then $x$ can be modeled by a Poisson distribution:
-
-$$
-p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
-$$ {#eq-poisson}
-
-Where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.
-
 ```{r}
 eruptions <- c(1492, 1585, 1646, 1677, 1712, 1949, 1971, 2021)
 n_eruptions <- length(eruptions)
@@ -90,11 +61,40 @@ avg_years_between_eruptions <- mean(diff(eruptions[-n_eruptions]))
 avg_years_between_eruptions
 ```
 
-Based on the eruptions up to and including 1971, we would estimate $\lambda$ to be $\frac{1}{`r round(avg_years_between_eruptions, 1)`}$.
+Based on data up to and including 1971, eruptions on La Palma happen every `r round(avg_years_between_eruptions, 1)` years on average.
 
 Studies of the magma systems feeding the volcano, such as @marrero2019, have proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).
 
-A prior study of the magma systems feeding the volcano proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano [@marrero2019].
+Eight eruptions have been recorded since the late 1400s (@fig-timeline).
+
+Data and methods are discussed in @sec-data-methods.
+
+Let $x$ denote the number of eruptions in a year. Then $x$ can be modeled by a Poisson distribution:
+
+$$
+p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
+$$ {#eq-poisson}
+
+Where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.
+
+| Name                 | Year   |
+| -------------------- | ------ |
+| Current              | 2021   |
+| Teneguía             | 1971   |
+| Nambroque            | 1949   |
+| El Charco            | 1712   |
+| Volcán San Antonio   | 1677   |
+| Volcán San Martin    | 1646   |
+| Tajuya near El Paso  | 1585   |
+| Montaña Quemada      | 1492   |
+
+: Recent historic eruptions on La Palma {#tbl-history}
+
+@tbl-history summarises the eruptions recorded since the colonization of the islands by Europeans in the late 1400s.
+
+![Map of La Palma](images/la-palma-map.png){#fig-map}
+
+La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (@fig-map). 
 
 {{< embed notebooks/data-screening.ipynb#fig-spatial-plot >}}
 
@@ -109,4 +109,3 @@ A prior study of the magma systems feeding the volcano proposed that there are t
 :::{#refs}
 
 :::
-
