@@ -1,0 +1,31 @@
+---
+title: Explore Earthquakes
+author: Charlotte Wickham
+---
+
+```{r}
+library(tidyverse)
+```
+
+
+Read a clean version of data:
+
+```{r}
+la_palma <- read_csv("la-palma.csv")
+```
+
+Create spatial plot:
+
+```{r}
+#| label: fig-spatial-plot
+#| fig-cap: "Locations of earthquakes on La Palma since 2017"
+#| fig-alt: "A scatterplot of earthquake locations plotting latitude 
+#|   against longitude."
+la_palma |> 
+  ggplot(aes(Longitude, Latitude)) +
+  geom_point(aes(color = Magnitude, size = 40-`Depth(km)`)) +
+  scale_color_viridis_c(direction = -1) + 
+  scale_size(range = c(0.5, 2), guide = "none") +
+  theme_bw()
+```
+
