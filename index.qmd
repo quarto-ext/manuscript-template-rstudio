@@ -50,7 +50,7 @@ n_eruptions <- length(eruptions)
 #| fig-width: 6
 par(mar = c(3, 1, 1, 1) + 0.1)
 plot(eruptions, rep(0, n_eruptions), 
-  pch = "|", axes = FALSE, xlab = "", ylab = "")
+  pch = "|", axes = FALSE)
 axis(1)
 box()
 ```
