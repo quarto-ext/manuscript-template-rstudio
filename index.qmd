@@ -69,13 +69,13 @@ Eight eruptions have been recorded since the late 1400s (@fig-timeline).
 
 Data and methods are discussed in @sec-data-methods.
 
-Let $x$ denote the number of eruptions in a year. Then $x$ can be modeled by a Poisson distribution:
+Let $x$ denote the number of eruptions in a year. Then, $x$ can be modeled by a Poisson distribution
 
 $$
-p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
+p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
 $$ {#eq-poisson}
 
-Where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.
+where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.
 
 | Name                 | Year   |
 | -------------------- | ------ |
