@@ -19,7 +19,7 @@ Create spatial plot:
 ```{r}
 #| label: fig-spatial-plot
 #| fig-cap: "Locations of earthquakes on La Palma since 2017"
-#| fig-alt: "A scatterplot of earthquake locations plotting latitude 
+#| fig-alt: "A scatterplot of earthquake locations plotting latitude
 #|   against longitude."
 la_palma |> 
   ggplot(aes(Longitude, Latitude)) +
