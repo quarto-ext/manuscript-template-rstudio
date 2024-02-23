@@ -72,10 +72,10 @@ administration</role>
 <corresp id="cor-1">steve@curvenote.com</corresp>
 </author-notes>
 
-<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2023-09-26">
-<year>2023</year>
-<month>9</month>
-<day>26</day>
+<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2024-02-23">
+<year>2024</year>
+<month>2</month>
+<day>23</day>
 </pub-date>
 
 
@@ -209,7 +209,7 @@ Nacional (IGN). …</p>
   <fig id="fig-spatial-plot">
     <caption><p>Figure 3: Locations of earthquakes on La Palma since
     2017</p></caption>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-spatial-plot-output-1.png" />
+    <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-explore-earthquakes-fig-spatial-plot-output-1.png" />
   </fig>
   <p><xref alt="Figure 3" rid="fig-spatial-plot">Figure 3</xref> shows
   the location of recent Earthquakes on La Palma.</p>
@@ -224,6 +224,7 @@ Nacional (IGN). …</p>
 
 <back>
 <ref-list>
+  <title>References</title>
   <ref id="ref-marrero2019">
     <element-citation publication-type="article-journal">
       <person-group person-group-type="author">
@@ -434,7 +435,7 @@ avg_years_between_eruptions</code>
   <fig id="fig-spatial-plot-nb-article">
     <caption><p>Figure 3: Locations of earthquakes on La Palma since
     2017</p></caption>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-spatial-plot-output-1.png" />
+    <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-explore-earthquakes-fig-spatial-plot-output-1.png" />
   </fig>
   </sec>
   </sec>
@@ -453,6 +454,7 @@ avg_years_between_eruptions</code>
 
 <back>
 <ref-list>
+  <title>References</title>
   <ref id="ref-marrero2019-nb-article">
     <element-citation publication-type="article-journal">
       <person-group person-group-type="author">
