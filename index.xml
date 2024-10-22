@@ -72,10 +72,10 @@ administration</role>
 <corresp id="cor-1">steve@curvenote.com</corresp>
 </author-notes>
 
-<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2024-02-23">
+<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2024-10-22">
 <year>2024</year>
-<month>2</month>
-<day>23</day>
+<month>10</month>
+<day>22</day>
 </pub-date>
 
 
@@ -138,7 +138,7 @@ Nacional (IGN). …</p>
   <tex-math><![CDATA[
   p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
    \qquad(1)]]></tex-math>
-  <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>p</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>λ</mml:mi></mml:mrow></mml:msup><mml:msup><mml:mi>λ</mml:mi><mml:mi>x</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>!</mml:mi></mml:mrow></mml:mfrac><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
+  <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>p</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mi>−</mml:mi><mml:mi>λ</mml:mi></mml:mrow></mml:msup><mml:msup><mml:mi>λ</mml:mi><mml:mi>x</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>!</mml:mi></mml:mrow></mml:mfrac><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
   <p>where <inline-formula><alternatives>
   <tex-math><![CDATA[\lambda]]></tex-math>
   <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>λ</mml:mi></mml:math></alternatives></inline-formula>
@@ -309,11 +309,11 @@ Nacional (IGN). …</p>
 <body>
 <sec id="introduction-nb-article">
   <title>1 Introduction</title>
-  <sec id="nb-code-cell-1-nb-article" specific-use="notebook-code">
+  <sec specific-use="notebook-content">
   <code language="r script">eruptions &lt;- c(1492, 1585, 1646, 1677, 1712, 1949, 1971, 2021)
 n_eruptions &lt;- length(eruptions)</code>
   </sec>
-  <sec id="cell-fig-timeline-nb-article" specific-use="notebook-code">
+  <sec id="cell-fig-timeline-nb-article" specific-use="notebook-content">
   <code language="r script">par(mar = c(3, 1, 1, 1) + 0.1)
 plot(eruptions, rep(0, n_eruptions), 
   pch = &quot;|&quot;, axes = FALSE)
@@ -325,12 +325,12 @@ box()</code>
     <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-timeline-1.png" />
   </fig>
   </sec>
-  <sec id="nb-code-cell-2-nb-article" specific-use="notebook-code">
+  <sec specific-use="notebook-content">
   <code language="r script">avg_years_between_eruptions &lt;- mean(diff(eruptions[-n_eruptions]))
 avg_years_between_eruptions</code>
-  <sec id="nb-code-cell-2-output-0-nb-article" specific-use="notebook-output">
-  <preformat>[1] 79.83333</preformat>
-  </sec>
+  <boxed-text>
+    <preformat>[1] 79.83333</preformat>
+  </boxed-text>
   </sec>
   <p>Based on data up to and including 1971, eruptions on La Palma
   happen every 79.8 years on average.</p>
@@ -356,7 +356,7 @@ avg_years_between_eruptions</code>
   <tex-math><![CDATA[
   p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
    \qquad(1)]]></tex-math>
-  <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>p</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>λ</mml:mi></mml:mrow></mml:msup><mml:msup><mml:mi>λ</mml:mi><mml:mi>x</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>!</mml:mi></mml:mrow></mml:mfrac><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
+  <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>p</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mi>−</mml:mi><mml:mi>λ</mml:mi></mml:mrow></mml:msup><mml:msup><mml:mi>λ</mml:mi><mml:mi>x</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>!</mml:mi></mml:mrow></mml:mfrac><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
   <p>where <inline-formula><alternatives>
   <tex-math><![CDATA[\lambda]]></tex-math>
   <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>λ</mml:mi></mml:math></alternatives></inline-formula>
@@ -424,20 +424,20 @@ avg_years_between_eruptions</code>
   <p>La Palma is one of the west most islands in the Volcanic
   Archipelago of the Canary Islands
   (<xref alt="Figure 2" rid="fig-map-nb-article">Figure 2</xref>).</p>
-  <sec id="cell-fig-spatial-plot-nb-article" specific-use="notebook-code">
+  <sec id="cell-fig-spatial-plot-nb-article" specific-use="notebook-content">
   <code language="python">la_palma |&gt; 
   ggplot(aes(Longitude, Latitude)) +
   geom_point(aes(color = Magnitude, size = 40-`Depth(km)`)) +
   scale_color_viridis_c(direction = -1) + 
   scale_size(range = c(0.5, 2), guide = &quot;none&quot;) +
   theme_bw()</code>
-  <sec id="cell-fig-spatial-plot-output-0-nb-article" specific-use="notebook-output">
-  <fig id="fig-spatial-plot-nb-article">
-    <caption><p>Figure 3: Locations of earthquakes on La Palma since
-    2017</p></caption>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-explore-earthquakes-fig-spatial-plot-output-1.png" />
-  </fig>
-  </sec>
+  <boxed-text>
+    <fig id="fig-spatial-plot-nb-article">
+      <caption><p>Figure 3: Locations of earthquakes on La Palma since
+      2017</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-explore-earthquakes-fig-spatial-plot-output-1.png" />
+    </fig>
+  </boxed-text>
   </sec>
   <p><xref alt="Figure 3" rid="fig-spatial-plot-nb-article">Figure 3</xref> shows
   the location of recent Earthquakes on La Palma.</p>
@@ -497,28 +497,28 @@ avg_years_between_eruptions</code>
 </front-stub>
 
 <body>
-<sec id="nb-code-cell-1-nb-1" specific-use="notebook-code">
+<sec specific-use="notebook-content">
 <code language="r script">library(tidyverse)
 </code>
-<sec id="nb-code-cell-1-output-0-nb-1" specific-use="notebook-output">
-<preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.3     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.3     ✔ tibble    3.2.1
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+<boxed-text>
+  <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.0     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
 ✔ purrr     1.0.2     
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</preformat>
-</sec>
+</boxed-text>
 </sec>
 <p>Read a clean version of data:</p>
-<sec id="nb-code-cell-2-nb-1" specific-use="notebook-code">
+<sec specific-use="notebook-content">
 <code language="r script">la_palma &lt;- read_csv(&quot;la-palma.csv&quot;)
 </code>
-<sec id="nb-code-cell-2-output-0-nb-1" specific-use="notebook-output">
-<preformat>Rows: 11347 Columns: 5
+<boxed-text>
+  <preformat>Rows: 11347 Columns: 5
 ── Column specification ────────────────────────────────────────────────────────
 Delimiter: &quot;,&quot;
 dbl  (4): Longitude, Latitude, Depth(km), Magnitude
@@ -526,10 +526,10 @@ dttm (1): DateTime
 
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
-</sec>
+</boxed-text>
 </sec>
 <p>Create spatial plot:</p>
-<sec id="cell-fig-spatial-plot-nb-1" specific-use="notebook-code">
+<sec id="cell-fig-spatial-plot-nb-1" specific-use="notebook-content">
 <code language="r script">#|   against longitude.&quot;
 la_palma |&gt; 
   ggplot(aes(Longitude, Latitude)) +
